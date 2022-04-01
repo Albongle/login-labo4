@@ -1,0 +1,15 @@
+<router-outlet></router-outlet>
+<div class="container">
+  <div class="login form__login">
+    <img src="../assets//images/login.ico" alt="" />
+    <div class="login login__controles">
+      <input type="text" placeholder="Usuario" [(ngModel)]="usuario.usuario" />
+      <input type="password" placeholder="Password" [(ngModel)]="usuario.password" />
+    </div>
+    <div class="login login__button">
+      <input type="button" value="Login" (click)="usuario.SingIn()" />
+    </div>
+  </div>
+</div>
+
+
